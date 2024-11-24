@@ -52,6 +52,7 @@ import org.commonmark.node.Paragraph
 import org.commonmark.node.StrongEmphasis
 import org.commonmark.node.Text
 import org.commonmark.node.ThematicBreak
+import se.hellsoft.markdowncomposer.my.MarkdownEditText
 
 /**
  * These functions will render a tree of Markdown nodes parsed with CommonMark.
@@ -77,7 +78,8 @@ private const val TAG_IMAGE_URL = "imageUrl"
 
 @Composable
 fun MDDocument(document: Document) {
-    MDBlockChildren(document)
+//    MDBlockChildren(document)
+    MarkdownEditText()
 }
 
 @Composable

@@ -1,2 +1,3 @@
 rootProject.name = "Markdown Composer"
 include ':app'
+include ':commonmark-parent:commonmark'
