@@ -195,7 +195,7 @@ class ListBlockParser(private val block: ListBlock) : AbstractBlockParser() {
                     else -> false
                 }
             } else {
-                true
+                false // 应该是false
             }
         }
 
