@@ -98,11 +98,11 @@ fun parseMarkdownToAnnotatedString(
 ): AnnotatedString {
     val document = parser.parse(rawText)
     // swithunlog("document", document)
-    val final = getTrailingWhitespace(rawText)
+//    val final = getTrailingWhitespace(rawText)
 
     val result = buildAnnotatedString {
         appendMarkdownNodes(document)
-        append(final)
+//        append(final)
     }
     return result
 }
@@ -139,7 +139,7 @@ fun AnnotatedString.Builder.appendMarkdownNodes(node: org.commonmark.node.Node) 
             }
             is org.commonmark.node.BulletList -> {
                 currentNode.firstChild?.let {
-                    append("• ")
+                    this.append("• ")
                     appendMarkdownNodes(it)
                 }
             }

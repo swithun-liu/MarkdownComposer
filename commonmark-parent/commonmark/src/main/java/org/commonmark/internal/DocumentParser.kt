@@ -83,7 +83,7 @@ class DocumentParser(
         var lineStart = 0
         var lineBreak: Int
         while ((Characters.findLineBreak(input, lineStart).also { lineBreak = it }) != -1) {
-            val line = input.substring(lineStart, lineBreak)
+            val line = input.substring(lineStart, lineBreak + 1)
             parseLine(line, lineStart)
             lineStart =
                 if (lineBreak + 1 < input.length && input[lineBreak] == '\r' && input[lineBreak + 1] == '\n') {

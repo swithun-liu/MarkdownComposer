@@ -601,7 +601,7 @@ public class InlineParserImpl implements InlineParser, InlineParserState {
         char c;
         while (true) {
             c = scanner.peek();
-            if (c == Scanner.END || specialCharacters.get(c)) {
+            if (c == Scanner.END ) {
                 break;
             }
             scanner.next();
