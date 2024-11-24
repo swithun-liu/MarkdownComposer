@@ -1,5 +1,6 @@
 module org.commonmark {
-    requires kotlin.stdlib; // 添加对 Kotlin 标准库的依赖
+    requires kotlin.stdlib; // 添加对 Kotlin 标准库的0----
+
 
     exports org.commonmark;
     exports org.commonmark.node;
