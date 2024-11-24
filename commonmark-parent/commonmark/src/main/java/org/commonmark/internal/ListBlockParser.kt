@@ -57,7 +57,7 @@ class ListBlockParser(private val block: ListBlock) : AbstractBlockParser() {
         override fun tryStart(
             state: ParserState,
             matchedBlockParser: MatchedBlockParser
-        ): BlockStart {
+        ): BlockStart? {
             val matched = matchedBlockParser.matchedBlockParser
 
             if (state.indent >= Parsing.CODE_BLOCK_INDENT) {
